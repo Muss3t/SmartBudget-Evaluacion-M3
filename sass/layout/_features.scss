@@ -1,0 +1,42 @@
+.features {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Aquí aplicamos Grid para las 3 columnas */
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en celulares */
+    gap: 2rem;
+
+    /* Media query: Si la pantalla es mayor a 768px, usa 3 columnas */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+/* Estilos de la tarjeta (Componente reutilizable) */
+.card-feature {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra para dar profundidad */
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+  }
+
+  &__title {
+    color: $color-primary;
+    margin-bottom: 1rem;
+  }
+}

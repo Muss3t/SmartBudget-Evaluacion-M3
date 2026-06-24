@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartBudget - Gestiona tus finanzas personales de forma intuitiva">
+    <title>SmartBudget | Control Financiero</title>
+    
+    <!-- 1. Bootstrap 4 CSS (Vía CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!-- 2. Nuestro CSS Personalizado (Se carga después para mantener prioridad) -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-light">
+
+<!--HEADER & NAVEGACIÓN (Componente Bootstrap)-->
+    <header class="main-header bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand font-weight-bold text-primary" href="#">SmartBudget</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#caracteristicas">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL-->
+    <main>
+        <!-- SECCIÓN HERO (Combinando BEM y utilidades de Bootstrap) -->
+        <section id="inicio" class="hero text-center py-5 bg-white border-bottom">
+            <div class="container hero__container py-4">
+                <h1 class="hero__title display-4 font-weight-bold text-primary">Toma el control de tus finanzas personales</h1>
+                <p class="hero__text lead text-muted mb-4">Visualiza, gestiona y optimiza tu presupuesto de forma intuitiva y segura.</p>
+                <!-- Botón que activa el Modal de Bootstrap -->
+                <button type="button" class="btn btn-info btn-lg px-4" data-toggle="modal" data-target="#registroModal">Comenzar gratis</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CARACTERÍSTICAS (Uso de Grid y Cards de Bootstrap) -->
+        <section id="caracteristicas" class="py-5 container">
+            <h2 class="text-center font-weight-bold mb-5">¿Por qué elegir SmartBudget?</h2>
+            
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 card-feature">
+                        <div class="card-body">
+                            <h3 class="card-title h5 text-primary">Rastreo en tiempo real</h3>
+                            <p class="card-text text-muted">Conecta tus cuentas y categoriza tus gastos automáticamente.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 card-feature">
+                        <div class="card-body">
+                            <h3 class="card-title h5 text-primary">Presupuestos modulares</h3>
+                            <p class="card-text text-muted">Crea límites de gasto adaptables a tu estilo de vida.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 card-feature">
+                        <div class="card-body">
+                            <h3 class="card-title h5 text-primary">Reportes visuales</h3>
+                            <p class="card-text text-muted">Gráficos claros para entender a dónde va tu dinero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--MODAL DE REGISTRO (Componente Bootstrap)-->
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="registroModalLabel">¡Únete a SmartBudget!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Próximamente habilitaremos el registro de usuarios. ¡Mantente atento a nuestras actualizaciones!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER -->
+    <footer class="text-center py-4 text-muted border-top bg-white">
+        <p class="mb-0"><small>&copy; 2026 SmartBudget. Todos los derechos reservados.</small></p>
+    </footer>
+
+    <!-- 3. Bootstrap JS y dependencias (jQuery y Popper) para interactividad -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
