@@ -1,6 +1,6 @@
 # Justificación Metodológica - Proyecto SmartBudget
 
-https://muss3t.github.io/SmartBudget-Evaluacion-M3/
+# https://muss3t.github.io/SmartBudget-Evaluacion-M3/
 
 ## Lección 1: El rol del Front-End en el proceso de diseño digital
 
