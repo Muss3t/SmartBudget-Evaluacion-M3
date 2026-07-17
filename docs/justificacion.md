@@ -1,6 +1,7 @@
 # Justificación Metodológica - Proyecto SmartBudget
 
-# link https://muss3t.github.io/SmartBudget-Evaluacion-M3/
+https://muss3t.github.io/SmartBudget-Evaluacion-M3/
+
 ## Lección 1: El rol del Front-End en el proceso de diseño digital
 
 El rol del desarrollador front-end es actuar como el puente vital entre la concepción visual de un producto (como un prototipo en Figma) y la interacción real del usuario. No se trata solo de "traducir" imágenes a código, sino de garantizar que la interfaz sea accesible, semánticamente correcta y escalable. 
